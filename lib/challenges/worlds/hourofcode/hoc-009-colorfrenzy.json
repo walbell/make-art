@@ -9,13 +9,13 @@
             "solution": "stroke 0"
         },
         {
-            "hint": "For this one lets use two loops, one to go horizontally across the screen, and one to go down vertically. **Type** `for x in [ 0 .. 20 ]`",
-            "solution": "for x in [ 0 .. 20 ]"
+            "hint": "For this one lets use two loops, one to go horizontally across the screen, and one to go down vertically. **Type** `for x in [0 .. 20]`",
+            "solution": "for x in [0 .. 20]"
         },
         {
-            "hint": "The second loop should be `for y in [ 0 .. 20 ]`",
-            "solution": "    for y in [ 0 .. 20 ]",
-            "validate": "    for y in \\[ 0 .. 20 \\]"
+            "hint": "The second loop should be `for y in [0 .. 20]`",
+            "solution": "    for y in [0 .. 20]",
+            "validate": "    for y in \\[0 .. 20\\]"
         },
         {
             "hint": "Set the color with `color rotate red, x * 10`",
