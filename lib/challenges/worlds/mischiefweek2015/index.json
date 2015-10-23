@@ -1,7 +1,8 @@
 {
     "challenges": [
-        "./pumpkin",
+        "./skull",
         "./cat",
+        "./pumpkin",
         "./potion",
         "./ghost",
         "./spider",
