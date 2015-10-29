@@ -51,8 +51,8 @@
 
                 a.button.large.button-success(ng-click='shareFatherDay()', href='#') Share it!
 
-    .row(ng-if='started')
-        .col-6.editor-wrap
+    .row.challenge-container(ng-if='started')
+        .code-wrap
 
             editor(
                 workspace,
@@ -65,7 +65,7 @@
                 controls='true'
                 )
 
-        .col-6.tutorial-wrap
+        .tutorial-wrap
 
             display(
                 reset-fn='restart'

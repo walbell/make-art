@@ -21,6 +21,7 @@
         padding 20px
 
     progress-circle
+        display none
         float left
         margin-right 20px
 
@@ -51,6 +52,13 @@
 
         strong
             smooth-font()
+        
+
+        @media layout-media-mobile
+            p
+                font-size 0.6em
+            p code
+                font-size 0.7em
 
     &.success
         background-color color-success

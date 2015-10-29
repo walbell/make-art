@@ -1,7 +1,16 @@
 .page-challenge
-
+    
+    .challenge-container
+        width 100%
+        height 100%
+        display flex
+        flex-direction row
+        flex-wrap nowrap
+        
     .button-hint
         button-color(color-editor-bg)
+        
+        display none
 
         &.highlight
             background red
@@ -40,9 +49,19 @@
 
         > *
             blur-fx .9px
-
-    .tutorial-wrap
+            
+    .code-wrap, .tutorial-wrap
         position relative
+        width 50%
+        min-height 200px
+        padding 0 5px
+        margin 0 5px
+    
+    .tutorial-wrap
+        display flex
+        align-items flex-start
+        justify-content center
+        
 
     .tutorial-display
         border-radius()
