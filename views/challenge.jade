@@ -1,6 +1,10 @@
 .page-challenge: .page-width
+    .intro(ng-show='isBannerOpen')
+        //- h2 Want to try to draw with code?
+        //- button(ng-click='isBannerOpen = false') TRY
+        include partial/try-banner
 
-    .workspace-header(ng-class='(animationClass || "") + (completed ? " success" : "") + (fatherDay ? " father-day" : "")')
+    .workspace-header(ng-class='(animationClass || "") + (completed ? " success" : "") + (fatherDay ? " father-day" : "")' ng-show='!isBannerOpen')
 
         .inner.center(ng-if='!started')
 
@@ -51,7 +55,7 @@
 
                 a.button.large.button-success(ng-click='shareFatherDay()', href='#') Share it!
 
-    .row.challenge-container(ng-if='started')
+    .row.challenge-container(ng-if='started && !isBannerOpen')
         .code-wrap
 
             editor(

@@ -1,11 +1,22 @@
 .page-challenge
+    idth 100%
+    height 100%
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    margin 0
     
+    .intro
+        width 100%
+        background #51555c
+        
     .challenge-container
         width 100%
         height 100%
         display flex
         flex-direction row
         flex-wrap nowrap
+        margin 0
         
     .button-hint
         button-color(color-editor-bg)
@@ -54,8 +65,12 @@
         position relative
         width 50%
         min-height 200px
-        padding 0 5px
-        margin 0 5px
+        margin 0
+        padding 0
+        
+        @media screen and (max-width: 1020px)
+            padding 0 5px
+            margin 0 5px
     
     .tutorial-wrap
         display flex
