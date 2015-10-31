@@ -7,7 +7,7 @@
     "startAt": 0,
     "steps": [
 			{
-			    "hint": "First we need to set the spooky scene, make it night time - **type** `background charcoal`",
+			    "hint": "Let’s set a spooky scene, make it night time - **type** `background charcoal`",
 			    "solution": "background charcoal"
 			},
 			{
