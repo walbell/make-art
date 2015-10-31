@@ -1,0 +1,68 @@
+{
+    "challenges": [
+        {
+            "id": "skull",
+            "title": "Oct 26: Skull",
+            "cover": "mischiefweek2015/mw-001-skull.png",
+            "index": 1,
+            "hasNext": true,
+            "start_date": "2015-10-26T06:00:00"
+        },
+        {
+            "id": "cat",
+            "title": "Oct 27: Spooky Cat",
+            "cover": "mischiefweek2015/mw-002-cat.png",
+            "index": 2,
+            "hasNext": true,
+            "start_date": "2015-10-27T06:00:00"
+        },
+        {
+            "id": "pumpkin",
+            "title": "Oct 28: Kan-o-lantern",
+            "cover": "mischiefweek2015/mw-003-pumpkin.png",
+            "index": 3,
+            "hasNext": true,
+            "start_date": "2015-10-28T06:00:00"
+        },
+        {
+            "id": "potion",
+            "title": "Oct 29: Potion Flask",
+            "cover": "mischiefweek2015/mw-004-potion.png",
+            "index": 4,
+            "hasNext": true,
+            "start_date": "2015-10-29T06:00:00"
+        },
+        {
+            "id": "ghost",
+            "title": "Oct 30: Ghost",
+            "cover": "mischiefweek2015/mw-005-ghost.png",
+            "index": 5,
+            "hasNext": true,
+            "start_date": "2015-10-30T06:00:00"
+        },
+        {
+            "id": "spiderweb",
+            "title": "Oct 31: Spider Web",
+            "cover": "mischiefweek2015/mw-006-spiderweb.png",
+            "index": 6,
+            "hasNext": true,
+            "start_date": "2015-10-31T06:00:00"
+        },
+        {
+            "id": "hauntedhouse",
+            "title": "Nov 1: Haunted House",
+            "cover": "mischiefweek2015/mw-007-hauntedhouse.png",
+            "index": 7,
+            "hasNext": false,
+            "start_date": "2015-11-01T06:00:00"
+        }
+    ],
+    "id": "mischiefweek2015",
+    "name": "Mischief Week",
+    "description": "This is a Halloween dedicated world",
+    "world_path": "worlds/mischiefweek2015",
+    "cover": "world_covers/mischiefweek",
+    "css_class": "mischiefweek2015",
+    "type": "campaign",
+    "share_strategy": "mandatory"
+}

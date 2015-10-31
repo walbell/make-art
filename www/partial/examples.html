@@ -1,0 +1,14 @@
+
+<div ng-controller="ExamplesController">
+  <ul class="list examples-list">
+    <li ng-repeat="example in examples"><a href="#" ng-click="selectExample($index)" ng-class="{ active: $index === current }">{{ example.title }}</a></li>
+  </ul>
+  <div class="row">
+    <div class="col-6">
+      <editor ng-model="code" editable="true" workspace="workspace"></editor>
+    </div>
+    <div class="col-6">
+      <display source="code" workspace="workspace"></display>
+    </div>
+  </div>
+</div>

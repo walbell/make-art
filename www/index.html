@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:ng="http://angularjs.org">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="orange">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link href="/css/main.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript">
+      (function() {
+          window.XMLHttpRequest = window.XMLHttpRequest || (function() {
+              return new window.ActiveXObject("Microsoft.XMLHTTP");
+          });
+      })();
+    </script>
+    <title>Draw</title>
+  </head>
+  <body id="ng-app" ng-app="draw" class="online">
+    <script src="/js/vendor/console-polyfill.js" type="text/javascript"></script>
+    <div ng-cloak class="loading-overlay">
+      <div class="spinner"></div>
+    </div>
+    <header>
+      <div class="page-width"><a href="/" class="logo"></a>
+        <ul class="nav nav-left">
+          <li><a href="/challenges" ng-class="{ active: basePath === &quot;challenge&quot; || basePath === &quot;challenges&quot; }"><i class="icon-menu"></i> Challenges</a></li>
+          <li><a href="/playground" ng-class="{ active: basePath === &quot;playground&quot; }"><i class="icon-game"></i> Playground</a></li>
+        </ul>
+        <ul ng-cloak class="nav nav-right">
+          <li ng-if="!offline &amp;&amp; !loggedIn"><a href="#" ng-click="login()"><i class="icon-login"></i> Login</a></li>
+          <li ng-if="!offline &amp;&amp; loggedIn"><a ng-href="http://world.kano.me/users/{{ user.username }}" target="_blank" class="user-display">
+              <div class="avatar"><img ng-src="http://avatar.kano.me/username/{{ user.username }}.png"></div>{{ user.username }}</a></li>
+          <li ng-if="!offline &amp;&amp; loggedIn"><a href="#" ng-click="logout()"><i class="icon-logout"></i> Logout</a></li>
+          <li>
+            <button ng-click="shutdown()" ng-if="offline" class="close"><i class="icon-cross"></i></button>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <ng-view></ng-view>
+    <div ng-controller="SplashController" ng-show="isSplashOpen" ng-cloak class="modal-overlay">
+      <div class="modal-inner split-modal splash">
+        <div class="logo-title"></div>
+        <h4 class="center">Draw with code</h4>
+        <div class="center bottom-section">
+          <button ng-click="isSplashOpen = false" class="button large">Start</button>
+        </div>
+      </div>
+    </div><a href="http://www.kano.me" target="_blank" class="kano-logo"></a>
+    <script src="/js/vendor/angular.min.js" type="text/javascript"></script>
+    <script src="/js/vendor/angular-animate.js" type="text/javascript"></script>
+    <script src="/js/vendor/angular-route.min.js" type="text/javascript"></script>
+    <script src="/js/vendor/ace/ace.js" type="text/javascript"></script>
+    <script src="/js/vendor/ace/ext-language_tools.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      window.ENV = 'development';
+      
+      window.CONFIG = {
+          PRODUCTION      : false,
+          OFFLINE         : false,
+          SEGMENTIO_ID    : '',
+          FACEBOOK_APP_ID : '',
+          MAILSERVER      : '',
+          API_URL         : '',
+          WORLD_URL       : '',
+          CHALLENGES_URL  : '/assets/challenges/descriptors',
+          TEST_MODE       : false,
+          ENV             : 'development'
+      };
+      
+    </script>
+    <script src="/js/index.js" type="text/javascript"></script>
+    <script src="http://localhost:35729/livereload.js?snipver=1" type="text/javascript"></script>
+  </body>
+</html>

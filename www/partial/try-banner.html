@@ -1,0 +1,44 @@
+
+<div ng-controller="TryBannerController" ng-show="isBannerOpen" ng-cloak="ng-cloak" class="modal-overlay center-content">
+  <div class="try-banner">
+    <!---->
+    <div ng-show="showDescriptionFlag" class="app-description">
+      <div class="text">
+        <h1>{{appTitle}}</h1>
+        <p>{{appDescription}}</p>
+      </div>
+      <div class="image"><img ng-src="{{appImage}}"/></div>
+      <button ng-click="hideDescription()">CLOSE</button>
+    </div>
+    <div ng-show="showGridFlag" class="app-container">
+      <div class="row">
+        <div ng-click="showDescription(&quot;tq&quot;)" class="tq app-desktop">
+          <div class="icon"></div>
+          <p>Terminal Quest</p>
+        </div>
+        <div ng-click="removeBanner()" class="make-art app-desktop">
+          <div class="icon"></div>
+          <p>Make Art</p>
+        </div>
+        <div ng-click="showDescription(&quot;make_snake&quot;)" class="make-snake app-desktop">
+          <div class="icon"></div>
+          <p>Make Snake</p>
+        </div>
+      </div>
+      <div class="row">
+        <div ng-click="showDescription(&quot;make_minecraft&quot;)" class="make-minecraft app-desktop">
+          <div class="icon"></div>
+          <p>Make Minecraft</p>
+        </div>
+        <div ng-click="showDescription(&quot;make_pong&quot;)" class="make-pong app-desktop">
+          <div class="icon"></div>
+          <p>Make Pong</p>
+        </div>
+        <div ng-click="showDescription(&quot;make_music&quot;)" class="make-music app-desktop">
+          <div class="icon"></div>
+          <p>Make Music</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,89 @@
+{
+    "challenges": [
+        {
+            "id": "hoc-001-target",
+            "title": "Target",
+            "cover": "hoc-001-target.png",
+            "index": 1,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-002-swissflag",
+            "title": "Swiss Flag",
+            "cover": "hoc-002-swissflag.png",
+            "index": 2,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-003-variables",
+            "title": "Variables",
+            "cover": "hoc-003-variables.png",
+            "index": 3,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-004-swedishflag",
+            "title": "Swedish Flag",
+            "cover": "hoc-004-swedishflag.png",
+            "index": 4,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-005-spookyeyes",
+            "title": "Spooky Eyes",
+            "cover": "hoc-005-spookyeyes.png",
+            "index": 5,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-006-steve",
+            "title": "Steve",
+            "cover": "hoc-006-steve.png",
+            "index": 6,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-007-forloop",
+            "title": "Hypnotic patterns",
+            "cover": "hoc-007-forloop.png",
+            "index": 7,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-008-gradient",
+            "title": "8-bit sunset",
+            "cover": "hoc-008-gradient.png",
+            "index": 8,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-009-colorfrenzy",
+            "title": "Color Frenzy",
+            "cover": "hoc-009-colorfrenzy.png",
+            "index": 9,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-010-grassblock",
+            "title": "8-bit Grass Block",
+            "cover": "hoc-010-grassblock.png",
+            "index": 10,
+            "hasNext": true
+        },
+        {
+            "id": "hoc-011-diamondblock",
+            "title": "8-bit Diamond Block",
+            "cover": "hoc-011-diamondblock.png",
+            "index": 11,
+            "hasNext": false
+        }
+    ],
+    "id": "hourofcode",
+    "name": "Hour of Code",
+    "description": "This is a group of challenges for the hour of code",
+    "world_path": "worlds/hourofcode",
+    "cover": "world_covers/basic",
+    "css_class": "hourofcode",
+    "visibility": "hidden",
+    "type": "campaign"
+}
