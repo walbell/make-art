@@ -2382,22 +2382,22 @@ app.controller('TryBannerController', function ($scope, $rootScope, $timeout) {
     $scope.appDescriptions = {
         'tq': {
             'title': 'Terminal Quest',
-            'description': 'This is Terminal Quest and its description. Play it just from the Kano Kit'
+            'description': 'A mysterious choose-your-own adventure. Control the story with computer commands.'
         },
         'make_snake': {
             'title': 'Make Snake',
-            'description': 'This is Make Snake and its description. Play it just from the Kano Kit'        },
+            'description': 'Eat Apples, don\'t bite your tail. Simple Linux spells give kids the chance to share their own Snake boards.'        },
         'make_minecraft': {
             'title': 'Make Minecraft',
-            'description': 'This is Make Minecraft and its description. Play it just from the Kano Kit'
+            'description': 'Drag and drop jigsaw code blocks, and make Minecraft your own. Change the rules, craft castles, become the Master Builder.'
         },
         'make_pong': {
             'title': 'Make Pong',
-            'description': 'This is Make Pong and its description. Play it just from the Kano Kit'
+            'description': 'Code the arcade classic. Add sounds, crazy rules, and powerups. "Kids are making (and changing) my game with Kano." -Al Alcorn, inventor, Pong'
         },
         'make_music': {
             'title': 'Make Music',
-            'description': 'This is Make Music and its description. Play it just from the Kano Kit'
+            'description': 'Move over Kanye, you can make beats, melodies, and songs with code. Rock the world with loops and variables.'
         }
     };
 
@@ -2420,6 +2420,7 @@ app.controller('TryBannerController', function ($scope, $rootScope, $timeout) {
     };
 
     $scope.hideDescription = function () {
+        $scope.appImage = '';
         $scope.showDescriptionFlag = false;
         $timeout(function() {
             $scope.showGridFlag = true;

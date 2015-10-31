@@ -5225,11 +5225,15 @@ editor .ace_search.right .ace_searchbtn_close:before {
 }
 .center-content .try-banner .app-description h1 {
   color: #fff;
+  text-transform: none;
 }
 @media screen and (max-width: 600px) {
   .center-content .try-banner .app-description h1 {
     font-size: 1em;
   }
+}
+.center-content .try-banner .app-description p {
+  text-transform: none;
 }
 @media screen and (max-width: 600px) {
   .center-content .try-banner .app-description p {
@@ -5270,6 +5274,7 @@ editor .ace_search.right .ace_searchbtn_close:before {
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
+  text-transform: none;
 }
 .center-content .try-banner .app-container .row .app-desktop {
   cursor: pointer !important;
