@@ -5,10 +5,44 @@
     flex-direction row
     flex-wrap nowrap
     margin 0
+    justify-content center
+
     
     .intro
         width 100%
         background #51555c
+    
+    .success .modal-overlay.center-content
+        padding 20px
+        display -webkit-flex
+        flex-direction row
+        width 100%
+        margin 0
+        
+        .column
+            flex-direction column
+            flex-wrap nowrap
+            margin 20px
+        
+        .flag-image
+            illustration-fixed('layout/japan_flag', 80%)
+            margin auto 30px
+            width 20%
+            height 100%
+            
+            @media layout-media-mobile
+                width 100%
+        
+        .judoka-image
+            illustration-fixed('layout/success', 80%)
+            margin auto
+            
+
+        
+        h4
+            text-align center
+            color white
+            
         
     .challenge-container
         width 100%
