@@ -1,14 +1,21 @@
 display
+    width 100%
     border-radius()
     display block
     background #fff
     position relative
+    
+    @media layout-media-except-display
+        width 50%
 
     .display
         width 100%
         padding-top 100%
         position relative
         overflow hidden
+        margin auto
+        
+        
 
         .padded
             absolute-cover()
@@ -51,6 +58,7 @@ display
         padding-bottom 20px
         padding-top 10px
         text-align center
+        display none
 
         .action
             smooth-font()

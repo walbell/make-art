@@ -48,3 +48,22 @@ editor-height = 551px
 header-height = 35px
 editor-tabs-size = 45px
 editor-title-height = 50px
+
+layout-breakpoint-mobile = 600px
+layout-breakpoint-tablet = 768px
+layout-breakpoint-display = 980px
+layout-breakpoint-display-large = 1160px
+
+layout-breakpoint-nav-mobile = 785px
+layout-breakpoint-nav-tablet = 1000px
+
+layout-media-except-display = 'screen and (min-width:' + layout-breakpoint-display + ')'
+layout-media-except-mobile = 'screen and (min-width:' + layout-breakpoint-mobile + ')'
+layout-media-intermediate = 'screen and (min-width:' + (layout-breakpoint-mobile + 1) + ') and (max-width:' + layout-breakpoint-display-large + ')'
+layout-media-mobile = 'screen and (max-width:' + layout-breakpoint-mobile + ')'
+layout-media-tablet = 'screen and (min-width:' + (layout-breakpoint-mobile + 1) + ') and (max-width:' + layout-breakpoint-tablet + ')'
+layout-media-display = 'screen and (min-width:' + (layout-breakpoint-tablet + 1) + ') and (max-width:' + layout-breakpoint-display + ')'
+layout-media-display-large = 'screen and (min-width:' + (layout-breakpoint-display + 1) + ')'
+
+layout-media-nav-mobile = 'screen and (max-width:' + layout-breakpoint-nav-mobile + ')'
+layout-media-nav-tablet = 'screen and (min-width:' + (layout-breakpoint-nav-mobile + 1) + ') and (max-width:' + layout-breakpoint-nav-tablet + ')'

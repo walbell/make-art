@@ -1,7 +1,61 @@
 .page-challenge
+    idth 100%
+    height 100%
+    display flex
+    flex-direction row
+    flex-wrap nowrap
+    margin 0
+    justify-content center
 
+    
+    .intro
+        width 100%
+        background #51555c
+    
+    .success .modal-overlay.center-content
+        padding 20px
+        display -webkit-flex
+        flex-direction row
+        width 100%
+        margin 0
+        
+        .column
+            flex-direction column
+            flex-wrap nowrap
+            margin 20px
+        
+        .flag-image
+            illustration-fixed('layout/japan_flag', 80%)
+            margin auto 30px
+            width 20%
+            height 100%
+            
+            @media layout-media-mobile
+                width 100%
+        
+        .judoka-image
+            illustration-fixed('layout/success', 80%)
+            margin auto
+            
+
+        
+        h4
+            text-align center
+            color white
+            
+        
+    .challenge-container
+        width 100%
+        height 100%
+        display flex
+        flex-direction row
+        flex-wrap nowrap
+        margin 0
+        
     .button-hint
         button-color(color-editor-bg)
+        
+        display none
 
         &.highlight
             background red
@@ -40,9 +94,23 @@
 
         > *
             blur-fx .9px
-
-    .tutorial-wrap
+            
+    .code-wrap, .tutorial-wrap
         position relative
+        width 50%
+        min-height 200px
+        margin 0
+        padding 0
+        
+        @media screen and (max-width: 1020px)
+            padding 0 5px
+            margin 0 5px
+    
+    .tutorial-wrap
+        display flex
+        align-items flex-start
+        justify-content center
+        
 
     .tutorial-display
         border-radius()

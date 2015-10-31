@@ -1,0 +1,42 @@
+.modal-overlay.center-content(ng-controller='TryBannerController', ng-show='isBannerOpen', ng-cloak)
+    .try-banner
+
+        //- //- Logo
+        //- .logo-title
+
+        //- h4.center Want to draw with code?
+
+        //- //- Start button
+        //- .center.bottom-section
+
+        //-     button.button.large(ng-click='removeBanner()') Try
+        //
+        .app-description(ng-show='showDescriptionFlag')
+            .text
+                h1 {{appTitle}}
+                p {{appDescription}}
+            .image
+                img(ng-src='{{appImage}}')
+            button(ng-click='hideDescription()') CLOSE
+
+        .app-container(ng-show='showGridFlag')
+            .row
+                .tq.app-desktop(ng-click='showDescription("tq")')
+                    .icon
+                    p Terminal Quest
+                .make-art.app-desktop(ng-click='removeBanner()')
+                    .icon
+                    p Make Art
+                .make-snake.app-desktop(ng-click='showDescription("make_snake")')
+                    .icon
+                    p Make Snake
+            .row
+                .make-minecraft.app-desktop(ng-click='showDescription("make_minecraft")')
+                    .icon
+                    p Make Minecraft
+                .make-pong.app-desktop(ng-click='showDescription("make_pong")')
+                    .icon
+                    p Make Pong
+                .make-music.app-desktop(ng-click='showDescription("make_music")')
+                    .icon
+                    p Make Music

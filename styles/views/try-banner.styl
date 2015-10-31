@@ -1,0 +1,122 @@
+.center-content
+    display flex
+    align-items center
+    justify-content center
+    background rgba(0,0,0,0.2)
+    
+    
+    .try-banner
+        color white
+        flex-direction column
+        display flex
+
+        .app-description.ng-hide, .app-container.ng-hide
+            opacity 0.0
+            transform scale(0.9)
+            
+        .app-description
+            padding 20px
+            background rgba(0,0,0,0.1)
+            border-radius 5px
+            margin 3%
+            border 1px solid #666
+            transition 0.2s linear all
+            opacity 1
+            transform scale(1.0)
+            
+            @media screen and (min-width:980px)
+
+                .text
+                    display inline-block
+                    width 50%
+                    
+                .image
+                    display inline-block
+                    width 40%
+                    float left
+                
+            h1
+                color white
+                
+                @media layout-media-mobile
+                    font-size 1em
+            
+            @media layout-media-mobile
+                p
+                    font-size 0.7em
+        
+            
+            img
+                max-width 300px
+                display block
+                margin 10px 0
+                
+                @media layout-media-mobile
+                    width 100%
+            
+            button
+                margin 10px 0
+                position relative
+                float right
+
+        .app-container
+            .row
+                display flex
+                flex-direction row
+                flex-wrap nowrap
+                
+                .app-desktop
+                    cursor pointer !important 
+                
+                p
+                    text-align center
+                    font-weight bold
+                
+                .icon
+                    margin 20px
+                    transition all .2s ease-in-out
+                    transform scale(0.9)
+                    cursor pointer
+
+                    
+                    &:hover
+                        transform scale(1.1)
+                        cursor pointer
+
+
+                .tq .icon
+                    illustration-fixed('app-icons/tq')
+                
+                .make-art .icon
+                    illustration-fixed('app-icons/make-art-try')
+                
+                .make-snake .icon
+                    illustration-fixed('app-icons/make-snake')
+                
+                .make-minecraft .icon
+                    illustration-fixed('app-icons/make-minecraft')
+                
+                .make-pong .icon
+                    illustration-fixed('app-icons/make-pong')
+                
+                .make-music .icon
+                    illustration-fixed('app-icons/make-music')
+                
+                
+        
+        
+        h4
+            color white
+
+        .logo-title
+            illustration-fixed('layout/draw-logo')
+            margin 30px auto 20px
+
+            img
+                vertical-align middle
+
+            img:last-of-type
+                margin-left 20px
+        
+        button
+            button-color(color-green)
