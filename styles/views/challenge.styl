@@ -19,10 +19,16 @@
         width 100%
         margin 0
         
+        .success-container
+            text-align center
+            
+            button.button-success
+                margin 20px
+        
         .column
             flex-direction column
             flex-wrap nowrap
-            margin 20px
+            margin 0
         
         .flag-image
             illustration-fixed('layout/japan_flag', 80%)
@@ -30,8 +36,9 @@
             width 20%
             height 100%
             
-            @media layout-media-mobile
-                width 100%
+            height 100px
+            margin-right auto
+            margin-left auto
         
         .judoka-image
             illustration-fixed('layout/success', 80%)
@@ -42,6 +49,7 @@
         h4
             text-align center
             color white
+            margin-bottom 10px
             
         
     .challenge-container

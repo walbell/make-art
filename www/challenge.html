@@ -4,7 +4,6 @@
     <div ng-show="isBannerOpen &amp;&amp; !completed" class="intro">
       <div ng-controller="TryBannerController" ng-show="isBannerOpen" ng-cloak="ng-cloak" class="modal-overlay center-content">
         <div class="try-banner">
-          <!---->
           <div ng-show="showDescriptionFlag" class="app-description">
             <div class="text">
               <h1>{{appTitle}}</h1>
@@ -48,11 +47,14 @@
     </div>
     <div ng-show="completed" class="success">
       <div class="modal-overlay center-content">
-        <div class="column">
-          <div class="judoka-image"></div>
-          <h4>Great! You wrote your first piece of code art!</h4>
+        <div class="success-container">
+          <div class="column">
+            <div class="judoka-image"></div>
+            <h4>Great! You wrote your first piece of code art!</h4>
+          </div>
+          <div class="flag-image"></div>
+          <button ng-click="backToApps()" class="button-success">Back to apps</button>
         </div>
-        <div class="flag-image"></div>
       </div>
     </div>
     <div ng-class="(animationClass || &quot;&quot;) + (fatherDay ? &quot; father-day&quot; : &quot;&quot;)" ng-show="!isBannerOpen" class="workspace-header">

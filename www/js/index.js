@@ -1731,6 +1731,12 @@ app.controller('ChallengeController', function ($scope, $routeParams, $window, $
         $scope.challengeCompleteOpen = false;
     };
 
+    $scope.backToApps = function () {
+        console.log('backToApps');
+        $scope.restart();
+        $rootScope.isBannerOpen = true;
+    };
+
     init();
 });
 

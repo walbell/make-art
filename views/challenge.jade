@@ -4,10 +4,12 @@
 
     .success(ng-show='completed')
         .modal-overlay.center-content
-            .column
-                .judoka-image
-                h4 Great! You wrote your first piece of code art!
-            .flag-image
+            .success-container
+                .column
+                    .judoka-image
+                    h4 Great! You wrote your first piece of code art!
+                .flag-image
+                button.button-success(ng-click='backToApps()') Back to apps
 
 
     .workspace-header(ng-class='(animationClass || "") + (fatherDay ? " father-day" : "")' ng-show='!isBannerOpen')
