@@ -1581,7 +1581,7 @@ app.controller('ChallengeController', function ($scope, $routeParams, $window, $
                 saveCode(code);
             }
 
-            if (session.steps && finished && !$scope.completed) {
+            if (finished && !$scope.completed) {
                 analytics.track('Completed Challenge ' + $scope.id, {
                     category: 'Completed Challenge'
                 });
@@ -1732,9 +1732,9 @@ app.controller('ChallengeController', function ($scope, $routeParams, $window, $
     };
 
     $scope.backToApps = function () {
-        console.log('backToApps');
         $scope.restart();
         $rootScope.isBannerOpen = true;
+        window.location.href = '/challenge/basic/japan';
     };
 
     init();
