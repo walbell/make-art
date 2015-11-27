@@ -2,12 +2,10 @@
     .intro(ng-show='isBannerOpen && !completed')
         include partial/try-banner
 
-    .success(ng-show='completed')
-        .modal-overlay.center-content
-            .success-container
-                .column
-                    .judoka-image
-                    h4 Great! You wrote your first piece of code art!
+    .inner.center(ng-if='completed && !fatherDay')
+        .completion
+            .text
+                h4 Great! You wrote your first piece of code art!
                 button.button-success(ng-click='backToApps()') Back to apps
 
 
@@ -58,7 +56,7 @@
 
                 a.button.large.button-success(ng-click='shareFatherDay()', href='#') Share it!
 
-    .row.challenge-container(ng-if='started && !isBannerOpen && !completed')
+    .row.challenge-container(ng-if='started && !isBannerOpen')
         .code-wrap
 
             editor(

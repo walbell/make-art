@@ -45,13 +45,10 @@
         </div>
       </div>
     </div>
-    <div ng-show="completed" class="success">
-      <div class="modal-overlay center-content">
-        <div class="success-container">
-          <div class="column">
-            <div class="judoka-image"></div>
-            <h4>Great! You wrote your first piece of code art!</h4>
-          </div>
+    <div ng-if="completed &amp;&amp; !fatherDay" class="inner center">
+      <div class="completion">
+        <div class="text">
+          <h4>Great! You wrote your first piece of code art!</h4>
           <button ng-click="backToApps()" class="button-success">Back to apps</button>
         </div>
       </div>
@@ -85,7 +82,7 @@
         </div>
       </div>
     </div>
-    <div ng-if="started &amp;&amp; !isBannerOpen &amp;&amp; !completed" class="row challenge-container">
+    <div ng-if="started &amp;&amp; !isBannerOpen" class="row challenge-container">
       <div class="code-wrap">
         <editor workspace="workspace" ng-model="challenge.code" ng-class="{ completed: completed }" ng-change="validate()" editable="started" start-at-line="content.startAt" tabbed="true" controls="true"></editor>
       </div>
