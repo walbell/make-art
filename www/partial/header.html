@@ -1,18 +1,1 @@
-
-<header>
-  <div class="page-width"><a href="/" class="logo"></a>
-    <ul class="nav nav-left">
-      <li><a href="/challenges" ng-class="{ active: basePath === &quot;challenge&quot; || basePath === &quot;challenges&quot; }"><i class="icon-menu"></i> Challenges</a></li>
-      <li><a href="/playground" ng-class="{ active: basePath === &quot;playground&quot; }"><i class="icon-game"></i> Playground</a></li>
-    </ul>
-    <ul ng-cloak="ng-cloak" class="nav nav-right">
-      <li ng-if="!offline &amp;&amp; !loggedIn"><a href="#" ng-click="login()"><i class="icon-login"></i> Login</a></li>
-      <li ng-if="!offline &amp;&amp; loggedIn"><a ng-href="http://world.kano.me/users/{{ user.username }}" target="_blank" class="user-display">
-          <div class="avatar"><img ng-src="http://avatar.kano.me/username/{{ user.username }}.png"/></div>{{ user.username }}</a></li>
-      <li ng-if="!offline &amp;&amp; loggedIn"><a href="#" ng-click="logout()"><i class="icon-logout"></i> Logout</a></li>
-      <li>
-        <button ng-click="shutdown()" ng-if="offline" class="close"><i class="icon-cross"></i></button>
-      </li>
-    </ul>
-  </div>
-</header>
+<header><div class="page-width"><a href="/" class="logo"></a><ul class="nav nav-left"><li><a href="/challenges" ng-class="{ active: basePath === &quot;challenge&quot; || basePath === &quot;challenges&quot; }"><i class="icon-menu"></i> Challenges</a></li><li><a href="/playground" ng-class="{ active: basePath === &quot;playground&quot; }"><i class="icon-game"></i> Playground</a></li></ul><ul ng-cloak="ng-cloak" class="nav nav-right"><li ng-if="!offline &amp;&amp; !loggedIn"><a href="#" ng-click="login()"><i class="icon-login"></i> Login</a></li><li ng-if="!offline &amp;&amp; loggedIn"><a ng-href="http://world.kano.me/users/{{ user.username }}" target="_blank" class="user-display"><div class="avatar"><img ng-src="http://avatar.kano.me/username/{{ user.username }}.png"/></div>{{ user.username }}</a></li><li ng-if="!offline &amp;&amp; loggedIn"><a href="#" ng-click="logout()"><i class="icon-logout"></i> Logout</a></li><li><button ng-click="shutdown()" ng-if="offline" class="close"><i class="icon-cross"></i></button></li></ul></div></header>

@@ -1,17 +1,1 @@
-
-<div ng-controller="PromoPopupController" ng-show="isPopupOpen" class="modal-overlay">
-  <div class="modal-inner promo-popup">
-    <div class="sc-popup-header">
-      <h2>{{cfg.title}}</h2>
-      <p>{{cfg.text}}</p><a ng-click="isPopupOpen = false" class="close-btn"></a>
-    </div>
-    <div ng-if="isPopupOpen" class="sc-popup-body">
-      <div ng-if="cfg.body === 'video'" class="promo-video">
-        <iframe width="600" height="337" src="https://www.youtube.com/embed/D5H1A7-6E_U?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
-      </div>
-      <div ng-if="cfg.body === 'upgrade-kit' " class="upgrade-kit-img"></div>
-      <div ng-if="cfg.body === 'update' " class="update-img"></div>
-    </div>
-    <div class="sc-popup-footer"><a ng-click="isPopupOpen = false" href="{{cfg.link.url}}" target="_blank" class="button button-success large">{{cfg.link.text}}</a></div>
-  </div>
-</div>
+<div ng-controller="PromoPopupController" ng-show="isPopupOpen" class="modal-overlay"><div class="modal-inner promo-popup"><div class="sc-popup-header"><h2>{{cfg.title}}</h2><p>{{cfg.text}}</p><a ng-click="isPopupOpen = false" class="close-btn"></a></div><div ng-if="isPopupOpen" class="sc-popup-body"><div ng-if="cfg.body === 'video'" class="promo-video"><iframe width="600" height="337" src="https://www.youtube.com/embed/D5H1A7-6E_U?rel=0&amp;amp;controls=0&amp;amp;showinfo=0" frameborder="0" allowfullscreen="allowfullscreen"></iframe></div><div ng-if="cfg.body === 'upgrade-kit' " class="upgrade-kit-img"></div><div ng-if="cfg.body === 'update' " class="update-img"></div></div><div class="sc-popup-footer"><a ng-click="isPopupOpen = false" href="{{cfg.link.url}}" target="_blank" class="button button-success large">{{cfg.link.text}}</a></div></div></div>
